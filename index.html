@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<link rel="stylesheet" type="text/css" href="css/pageJS.css"/>
+<script type="text/javascript" src="js/page.js"></script>
+</head>
+<body>
+<div id="ui"></div>
+<script type="text/javascript">
+pageJs({
+	saetxt:false,//首页与末页是否以文字的形式展示 默认值:false
+	hidePreNxt:true,//是否隐藏上一页/下一页 默认值:false
+	pre:'',//上一页按钮 默认值:''(为空时以图片按钮显示)
+	nxt:'',//下一页按钮 默认值:''(为空时以图片按钮显示)
+	ellipsis:5,//总页数超过ellipsis后显示省略 默认值:10
+	page:3,//当前页 默认值:1
+	pages:20,//总页数 默认值:1
+	pageB:document.getElementById('ui'),//容器 默认值:document
+	num:2,//当前页左右各显示多少页 默认值0
+	url:'http://aijsd.com/?asd=asd&page='//分页跳转地址(跳转的页数会跟在url的最后一位字符串后面)
+});
+</script>
+</body>
+</html>
